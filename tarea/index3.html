@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página web con imágenes y descripciones</title>
+    <link rel="stylesheet" href="../tarea/css/style3.css">
+    <script src="https://kit.fontawesome.com/8af7a2e5f3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>Guia de instalación de odoo</h1>
+    </header>
+
+     <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Acerca de</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <p>En este caso yo he elegiodo odoo debido a que me parece un buen software de gestión empresarial, lo primero que he hecho ha sido buscar en internet odoo y le he dado al primer enlace que ponia descargar y ya se me ha comenzado a instalar solo. A continuación las capturas para ver como se instala:</p>
+     <section class="imagenes">
+    <div class="imagen">
+        <img src="../tarea/capturas/Captura de pantalla (20).png" alt="Imagen 1">
+        <p>En esta primera captura de pantalla es una vez que se nos ha descargado el software se nos abrira esta ventana para que selcionemos el idioma en este caso he elegido ingles porque sino tiene que ser frances</p>
+    </div>
+    <div class="imagen">
+        <img src="../tarea/capturas/Captura de pantalla (21).png" alt="Imagen 2">
+        <p>Este es el siguiente paso de la instalación que en este caso lo dejamos predeterminado</p>
+    </div>
+    <div class="imagen">
+         <img src="../tarea/capturas/Captura de pantalla (22).png" alt="Imagen 3">
+        <p>En el siguiente paso te da la opción de modificar los datos para sql/p>
+    </div>
+    <div class="imagen">
+        <img src="../tarea/capturas/Captura de pantalla (23).png" alt="Imagen 4">
+        <p>Ya se esta instalando</p>
+    </div>
+    <div class="imagen">
+        <img src="../tarea/capturas/Captura de pantalla (24).png" alt="Imagen 5">
+        <p>Instalación completada</p>
+    </div>
+     <div class="imagen">
+        <img src="../tarea/capturas/Captura de pantalla (25).png" alt="Imagen 6">
+        <p>Aqui ya te deja que edites la información para que configures tu base de datos y termines de rellenar tus datos</p>
+    </div>
+     <div class="imagen">
+        <img src="../tarea/capturas/Captura de pantalla (26).png" alt="Imagen 7">
+        <p>Aqui una captura de como  ya he rellenado los datos</p>
+    </div>
+     <div class="imagen">
+        <img src="../tarea/capturas/Captura de pantalla (27).png" alt="Imagen 8">
+        <p>En esta captura de pantalla podemos observar como ya hemos entrado en el menu de odoo y mek he puesto a descargar el apartado de ventas, esto lo expliico porque se me ha olvidado hacer capturas de pantalla. Uan vez que hemos entrado en oddo con nuestra cuenta en aplicaciones le podemos dar a ventas para poder configurar nuestro apartado y descaragarlo</p>
+    </div>
+     <div class="imagen">
+        <img src="../tarea/capturas/Captura de pantalla (28).png" alt="Imagen 9">
+        <p>En esta captura de pantalla se puede ver como se puede crear un nuvo usuario en ele apartado de ventas.</p>
+    </div>
+     <div class="imagen">
+        <img src="../tarea/capturas/Captura de pantalla (29).png" alt="Imagen 10">
+        <p>En esta captura de pantalla se puede ver donde se crea el nuevo usuario y los usuarios que tenemos creados y si son administradores o usuario normales</p>
+    </div>
+     <div class="imagen">
+        <img src="../tarea/capturas/Captura de pantalla (30).png" alt="Imagen 11">
+        <p>En esta pantalla se puede ver como se le pone los datos y el tipo de rol que va a tener el nuevo usuario de ventas </p>
+    </div>
+     <div class="imagen">
+        <img src="../tarea/capturas/Captura de pantalla (31).png" alt="Imagen 12">
+        <p>Aqui se puede ver como ya se enciiuentra creado el nueveo usuario y yya solo falta decirle el rol que deseas que tenga</p>
+    </div>
+
+</section>
+    </main>
+
+        <footer>
+
+        <ul>
+            <li> <a class="fa-brands fa-youtube" href="https://www.youtube.com" target="_blank"> </a></li>
+            <li><a class="fa-brands fa-square-facebook" href="https://www.facebook.com" target="_blank"> </a></li>
+            <li> <a class="fa-brands fa-instagram" href="https://www.instagram.com" target="_blank"></a> </li>
+            <li> <a class="fa-brands fa-x-twitter" href="https://www.twitter.com" target="_blank"></a></li>
+
+        </ul>
+    </footer>
+
+  <script src="../tarea/js/script.js"></script>
+  <script>
+window.addEventListener("load", function() {
+    document.body.classList.add("loaded");
+});
+
+const imagenes = document.querySelectorAll(".imagen img");
+imagenes.forEach(function(imagen) {
+    imagen.addEventListener("mouseover", function() {
+        imagen.classList.add("hover");
+    });
+    imagen.addEventListener("mouseout", function() {
+        imagen.classList.remove("hover");
+    });
+});
+
+const main = document.querySelector("main");
+main.addEventListener("scroll", function() {
+    const scrollPosition = main.scrollTop;
+    if (scrollPosition > 200) {
+        document.querySelector("header").classList.add("fixed");
+    } else {
+        document.querySelector("header").classList.remove("fixed");
+    }
+});</script>
+</body>
+</html>
